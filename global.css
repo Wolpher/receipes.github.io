@@ -3,9 +3,10 @@ body {
 }
 table{
     border-collapse: collapse;
+    width: 100%;
 }
 th, td{
     border: 1px solid black;
-    padding: 8 px;
+    padding: 8px;
     text-align: left;
 }
