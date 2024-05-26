@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .container a {
+            margin: 0 10px; /* Pour ajouter un espacement entre les liens */
+            text-align: center;
+        }
+        .container img {
+            width: 100px; /* Ajustez la taille des images selon vos besoins */
+            height: 100px; /* Ajustez la taille des images selon vos besoins */
+        }
+    </style>
 </head>
-<body style="height: 100%;align-content: center;">
-    <div >
-        <a style="display:block; margin-left: auto;" href="LecheAsada.html">
-            <img style="width: 10%;height: 10%;" src="LecheAsada.jpg" alt="Leche Asada">
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Leche Asada</div>
+<body>
+    <div class="container">
+        <a href="LecheAsada.html">
+            <img src="LecheAsada.jpg" alt="Leche Asada">
+            <div>Leche Asada</div>
         </a>
         <a href="manzanaAsada.html">
-            <img style="width: 10%;height: 10%; " src="manzanaAsada.png" alt="Manzana Asada">
+            <img src="manzanaAsada.png" alt="Manzana Asada">
         </a>
         <a href="compotaDePera.html">
-            <img style="width: 10%;height: 10%;" src="compotaDePera.png" alt="compota De Pera">
+            <img src="compotaDePera.png" alt="compota De Pera">
         </a>
         <a href="arrozConLeche.html">
-            <img style="width: 10%;height: 10%;" src="arrozConLeche.png" alt="arrozConLeche">
+            <img src="arrozConLeche.png" alt="arrozConLeche">
         </a>
     </div>
-    
 </body>
 </html>
