@@ -25,12 +25,18 @@
 <body class="container">
     <h1>Manzanas asadas</h1>
     <p style="background-color: bisque; width:25%; height: 50px; text-align: center;align-content: center;"> 4 servings</p>
-    
-    <video controls>
+    <img style="width: 25%;height: 25%;" src="manzanaAsada.png" alt="manzana Asada" onclick="startVideo()">
+    <video id="myvideo" controls style="display: none;">
         <source src="manzana.mp4" type="video/mp4">
-        <img style="width: 25%;height: 25%;" src="manzanaAsada.png" alt="manzana Asada">
         Your browser doesn't support the lecture of the videos in format mp4
     </video>
+    <script>
+        function startVideo(){
+            var video = document.getElementById('myvideo')
+            video.style.display = 'block';
+            video.play()
+        }
+    </script>
     <h3>Utensils</h3>
     <ul>
         <li>Plate or dish suitable for microwave ovens.</li>
